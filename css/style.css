@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+:root {
+  --primary-light: #b3c4c0;
+  --primary: #09a382;
+  --primary-dark: #0eebbb;
+  --white: #ffffff;
+  --greyLight-1: #e4f5ef;
+  --greyLight-2: #c8e7e2;
+  --greyLight-3: #bee4de;
+  --greyDark: #9bcfbf; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #3e363f;
+  background-color: #007946;
+}
+.bg{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+main {
+  filter: none;
+  width: 900px;
+  height: 500px;
+  text-align: center;
+  /*////////////////////////////////////////////////////////////*/
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.contenido {
+  /*////////////////////////////////////////////////////////////*/
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  padding: 40px;
+}
+
+input {
+  width: 70%;
+  padding: 12px 15px;
+  border: none;
+  background-color: #ff0000;
+}
+.item::-webkit-outer-spin-button,
+.item::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+#inicio {
+  background: #121fcf;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    rgba(0, 207, 138) 0%,
+    rgba(2, 77, 52) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 45px;
+  border-radius: 30px;
+  background: rgb(0, 207, 138);
+  background: radial-gradient(
+    circle,
+    rgba(0, 207, 138) 0%,
+    rgba(2, 77, 52) 100%
+  );
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 20ms ease-in;
+}
+
+#calculadora {
+  background: white;
+  /*////////////////////////////////////////////////////////////*/
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#detalle {
+  background: rgb(0, 207, 138);
+  background: radial-gradient(
+    circle,
+    rgba(0, 207, 138) 0%,
+    rgb(2, 77, 52) 100%
+  );
+  /*////////////////////////////////////////////////////////////*/
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: #f6f5f7;
+}
+button:active {
+  transform: scale(0.95);
+}
+#error {
+  font-weight: bold;
+  display: none;
+ 
+  background: #a74646;
+  background: -webkit-linear-gradient(to right, #a74646 0%, #921f1f 50%, #a50101 51%,#a50101 100%);
+  background: -moz-linear-gradient(to right, #a74646 0%, #921f1f 50%, #a50101 51%, #a50101 100%);
+  background: linear-gradient(to right, #a74646 0%, #921f1f 50%, #a50101 51%,#a50101 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.resultado {
+  color: #0a81d1;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 5px;
+  display: none;
+}
+.form__input {
+  width: 20.4rem;
+  height: 4rem;
+  
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  padding-left: 1.4rem;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+  background: none;
+  font-family: inherit;
+  color: var(--greyDark); }
+.form__input::placeholder {
+  color: var(--greyLight-3); }
+.form__input:focus {
+  outline: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+}
+.mostrar{
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    rgba(0, 207, 138) 0%,
+    rgba(2, 77, 52) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hidden{
+  display: none;
+}
+#bys{
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 15%;
+}
